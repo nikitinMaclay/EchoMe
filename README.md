@@ -20,7 +20,7 @@
 - **Backend**: Flask (Python)
 - **Frontend**: HTML + TailwindCSS + JS (Swiper.js, AOS)
 - **Почта**: SMTP (Yandex Mail)
-- **Хостинг**: [Render.com](https://render.com) *(или планируется)*
+- **Хостинг**: [Render.com](https://render.com)
 
 ---
 
@@ -31,3 +31,4 @@
    ```bash
    git clone https://github.com/your-username/craftedme.git
    cd craftedme
+   Дальше можешь запускать app как тебе удобно, по дефолту python app.py
