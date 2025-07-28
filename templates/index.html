@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое Портфолио</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../static/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../static/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../static/favicons/site.webmanifest">
+
+
+</head>
+<body class="bg-gray-900 text-white font-sans overflow-x-hidden">
+    <!-- Header -->
+    <header class="fixed w-full bg-gray-800 bg-opacity-90 z-50">
+        <nav class="container mx-auto py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Мое Портфолио</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-blue-400 transition">Обо мне</a></li>
+                <li><a href="#portfolio" class="hover:text-blue-400 transition">Работы</a></li>
+                <li><a href="#contact" class="hover:text-blue-400 transition">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center bg-gradient-to-r from-blue-500 to-purple-600 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://via.placeholder.com/1920x1080?text=Background')] bg-cover bg-center opacity-20 parallax-bg"></div>
+        <div class="text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-4 animate__fadeIn">Привет, я Миша!</h1>
+            <p class="text-xl md:text-2xl mb-6 animate__fadeIn delay-1">Фрилансер, разработчик и автор сайта!</p>
+            <a href="#portfolio" class="work-button bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded transition transform hover:scale-105">Мои работы</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 container mx-auto flex flex-col md:flex-row items-center">
+        <div class="w-full md:w-1/2 mb-8 md:mb-0">
+            <img src="../static/images/profile.jpg" alt="Ваше фото" class="rounded-full mx-auto animate__fadeInLeft shadow-lg">
+        </div>
+        <div class="w-full md:w-1/2 px-6">
+            <h2 class="text-3xl font-bold mb-4 animate__fadeInRight">Обо мне</h2>
+            <p class="text-lg">
+                Привет! Я Михаил, креативный специалист с опытом в разработке и проектировании. Моими основными сферами деятельности в последнее время являлись парсеры, telegram боты, боты по автоматизации, backend + frontend разработка и desktop приложения. Ниже вы сможете увидеть портфолио из моих работ.
+            </p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-800 relative">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12 animate__fadeIn">Мои работы</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="portfolio-item cursor-pointer relative overflow-hidden" data-project="1">
+                    <img src="../static/images/cat_energy/cat_energy_preview.png" alt="Cat Energy" class="w-full h-64 object-cover rounded transform transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-semibold text-white">Cat Energy</h3>
+                    </div>
+                    <p class="text-center mt-4">Адаптивный сайт по продаже питания для кошек</p>
+                </div>
+                <div class="portfolio-item cursor-pointer relative overflow-hidden" data-project="2">
+                    <img src="../static/images/technomart/technomart_preview.png" alt="Проект 2" class="w-full h-64 object-cover rounded transform transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-semibold text-white">Technomart</h3>
+                    </div>
+                    <p class="text-center mt-4">Сайт по продаже инструментов</p>
+                </div>
+                <div class="portfolio-item cursor-pointer relative overflow-hidden" data-project="3">
+                    <img src="../static/images/nft_automatization_bot/nft_preview.jpg" alt="NFT automatization bot" class="w-full h-64 object-cover rounded transform transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-semibold text-white">NFT automatization bot</h3>
+                    </div>
+                    <p class="text-center mt-4">Бот для автоматической покупки NFT</p>
+                </div>
+                <div class="portfolio-item cursor-pointer relative overflow-hidden" data-project="4">
+                    <img src="../static/images/insta_parser/inst_preview.png" alt="Instagram Parser" class="w-full h-64 object-cover rounded transform transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-semibold text-white">Instagram Parser</h3>
+                    </div>
+                    <p class="text-center mt-4">Парсер, оформленный в удобный интерфейс в виде сайта</p>
+                </div>
+                <div class="portfolio-item cursor-pointer relative overflow-hidden" data-project="5">
+                    <img src="../static/images/uefa/uefa_preview.jpg" alt="Uefa Register" class="w-full h-64 object-cover rounded transform transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-semibold text-white">Uefa Register</h3>
+                    </div>
+                    <p class="text-center mt-4">Авторегистратор аккаунтов</p>
+                </div>
+                <div class="portfolio-item cursor-pointer relative overflow-hidden" >
+                    <img src="../static/images/github.png" alt="Uefa Register" class="w-full h-64 object-cover rounded transform transition-transform duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                        <h3 class="text-xl font-semibold text-white">Где посмотреть еще? <a href="" target="_blank" class="links-on-modals">Тут</a></h3>
+                    </div>
+                    <p class="text-center mt-4">Что дальше?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Portfolio Carousel -->
+    <div id="portfolioModal" class="fixed inset-0 bg-black bg-opacity-75 hidden flex items-center justify-center z-50">
+    <div class="bg-gray-900 p-6 rounded-lg max-w-4xl w-full relative">
+        <button id="closeModal" class="absolute top-4 right-4 p-2 rounded-full bg-gray-200 hover:bg-red-500 transition-colors duration-300 group z-50">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-black group-hover:text-white transition-colors duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+        <div class="swiper-container bg-gray-900 text-white w-full h-full">
+            <div class="swiper-wrapper bg-gray-900 w-full h-full">
+                <!-- Динамически заполняется через JS -->
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Footer with Contact Form -->
+    <footer id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8 animate__fadeIn">Свяжитесь со мной</h2>
+            <div class="max-w-md mx-auto">
+                <form id="contactForm" method="POST" action="/contact" class="max-w-md mx-auto">
+
+                    <div class="mb-4">
+                        <input type="text" id="name" name="name" placeholder="Ваше имя" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <input type="email" id="email" name="email" placeholder="Ваш email" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500">
+                    </div>
+                    <div class="mb-4">
+                        <textarea id="message" name="message" placeholder="Ваше сообщение" class="w-full p-3 rounded bg-gray-800 text-white border border-gray-700 focus:outline-none focus:border-blue-500 h-32"></textarea>
+                    </div>
+                    <button id="submitForm" type="submit" class="bg-blue-500 hover:bg-blue-600 text-white py-2 px-6 rounded transition transform hover:scale-105">Отправить</button>
+                </form>
+            </div>
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <div class="mt-4 text-green-500">
+                  {% for message in messages %}
+                    <p>{{ message }}</p>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            {% endwith %}
+
+            <div class="mt-8">
+                <p>Email: <a href="mailto:guicokiuyt@gmail.com" class="hover:text-blue-400">guicokiuyt@gmail.com</a></p>
+                <p>Телефон: +7 (747) 772 2006</p>
+                <p class="mt-4">© 2025 Никитин Михаил. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../static/js/script.js"></script>
+</body>
+</html>
